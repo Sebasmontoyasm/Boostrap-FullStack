@@ -8,8 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
+    "less": "cd css && lessc styles.less stylesl.css && cd ..",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+    "watch:less": "onchange \"css/*.less\" -- npm run less",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run watch:less\" \"npm run lite\""
   },
   "author": "Sebastian Montoya, Coursera",
   "license": "ISC",
