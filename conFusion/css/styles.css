@@ -57,8 +57,8 @@ body {
   background: #512DA8; }
   .modalstyle .modal-header h4 {
     color: floralwhite; }
+  .modalstyle .modal-header .close-button {
+    color: floralwhite; }
 
 .modalstyle .modal-body {
   background: #D1C4E9; }
-  .modalstyle .modal-body form div .close-button {
-    color: floralwhite; }
